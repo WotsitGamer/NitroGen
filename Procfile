@@ -1,1 +1,1 @@
-web: python threadsnitro.py:app --log-file -
+web: python website.py:app --log-file -
