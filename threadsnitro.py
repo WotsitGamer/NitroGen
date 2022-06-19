@@ -79,7 +79,7 @@ class NitroGen:  # Initialise the class
             if webhook is not None:
                 DiscordWebhook(  # Let the user know it has started logging the ids
                         url=url,
-                        content=f"```Started checking urls\nI will send any valid codes here```"
+                        content=f"```Started checking urls\nI will send any valid codes here (HEROKU)```"
                     ).execute()
 
         print() # Print a newline for looks
