@@ -1,0 +1,1 @@
+web: python threadsnitro.py:app --log-file -
