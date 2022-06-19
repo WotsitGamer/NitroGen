@@ -1,1 +1,1 @@
-web: python heroku.py:app --log-file -
+worker: python heroku.py:work --log-file -
