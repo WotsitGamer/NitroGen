@@ -1,1 +1,2 @@
-worker: python heroku.py:work --log-file -
+web: python website.py:app --log-file -
+worker: python threadsnitro.py:work --log-file -
