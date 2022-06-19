@@ -111,7 +111,7 @@ class NitroGen:  # Initialise the class
                     exit()  # Break the loop
 
                 except Exception as e:  # If the request fails
-                    print(f" Error | {url} ")  # Tell the user an error occurred
+                    print(f" Error | {e} ")  # Tell the user an error occurred
 
             if os.name == "nt":  # If the system is windows
                 ctypes.windll.kernel32.SetConsoleTitleW(
@@ -169,37 +169,8 @@ Results:
                   end="" if os.name == 'nt' else "\n")
             return False  # Tell the main function there was not a code found
 
-from multiprocessing import Process
 
 if __name__ == '__main__':
     Gen = NitroGen()  # Create the nitro generator object
-    p = Process(target=Gen.main)
-    p.start()
-    p.join()
-    p.start()
-    p.join()    
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
-    p.start()
-    p.join()
+    Gen.main()
     
